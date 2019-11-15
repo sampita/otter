@@ -1,0 +1,253 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+/* This is the css styling for the nav bar by jb and mj */
+
+img {
+    width: 110px;
+    margin: .5%;
+    padding-left: .5%;
+}
+
+button {
+    background-color: #90C6F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.hyperlink {
+    text-decoration: underline;
+    color: #65a0f1;
+}
+
+.hyperlink:hover {
+    cursor: pointer;
+}
+
+#welcome-page {
+  text-align: center
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  }
+
+ul.topnav li {float: right;}
+
+ul.topnav li#logoutButton {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li#logoutButton:hover {
+  color: #90C6F4;
+  cursor: pointer;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #90C6F4;
+}
+
+ul.topnav img.left {
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav img.left, 
+  ul.topnav li img {
+      float: none;
+    }
+}
+
+/* The popup form - hidden by default */
+.signUpForm-popup, #newArticleContainer {
+    display: none;
+    margin-left: 25%;
+    margin-right:25%;
+    border: 3px solid #f1f1f1;
+    text-align: center;
+  }
+
+  .logInForm-popup {
+    display: none;
+    margin-left: 25%;
+    margin-right:25%;
+    border: 3px solid #f1f1f1;
+    text-align: center;
+  }
+
+/* Add styles to the form container */
+.form-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  width: 50%;
+  max-width: 300px;
+  margin-bottom: 70px;
+  background-color: white;
+  align-content: center;
+  }
+
+/* Full-width input fields */
+.form-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+#popup-container {
+  margin-bottom: 10%;
+}
+
+/* Main Page Styling */
+#main-page {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 50px;
+  }
+  
+.componentTitle {
+  text-align: center;
+  height: 15px;
+  margin: none;
+  padding: none;
+}
+
+#center-container {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+/*footer styling*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #90C6F4;
+    color: white;
+    text-align: center;
+    border-top: solid;
+    border-color: #111;
+    border-width: 5px;
+  }
+
+#messageBoard {
+  width: 100%;
+  height: 180px;
+  overflow: scroll;
+}
+
+
+label.messageLabel {
+  font-size: 14px;
+  margin-left: 5%;
+}
+
+.messageElement {
+  font-size: 14px;
+  background-color: rgb(235, 243, 252);
+  border: 1px solid rgb(201, 220, 242);
+  border-radius: 5px;
+  margin: 4px;
+  padding: 0 5px 0 5px;
+  word-wrap: normal;
+}
+
+.messageElement:last-of-type {
+  margin-bottom: 0;
+}
+
+h5#messagePostedBy{
+  margin: 0;
+}
+
+#messageTimestamp {
+  color: #90C6F4;
+  font-size: 9px;
+  margin: 0;
+  word-wrap: normal;
+}
+
+.fa-pen, .fa-trash-alt {
+  color: #90C6F4;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.fa-save {
+  color: #90C6F4;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.fa-pen:hover, .fa-trash-alt:hover, .fa-save:hover {
+  cursor: pointer;
+  color: rgb(91, 171, 240);
+}
+
+#messageElementBottomRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.messageInput {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#messages-container, #news-container, fieldset, textarea {
+  border: 1px solid #d0d0d0;
+}
+
+
+#newMessage {
+  display: flex;
+}
+
+#newMessageSubmitButton{
+  color: #cdcdcd;
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 11.5px 0 11.5px 0;
+  font-size: 32px;
+  text-align: center;
+  border: solid 1px #dadada;
+}
+
+#newMessageSubmitButton:hover {
+  cursor: pointer;
+  color: #90C6F4;
+  border-color: #90C6F4;
+}
+
