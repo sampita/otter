@@ -159,6 +159,7 @@ ul.topnav img.left {
     border-width: 5px;
   }
 
+/* Messages Component styles --------------------------------------*/
 #messageBoard {
   width: 100%;
   height: 180px;
@@ -251,3 +252,19 @@ h5#messagePostedBy{
   border-color: #90C6F4;
 }
 
+/* Tasks Component styles --------------------------------- */
+#taskCardName {
+  font-size: 14px;
+}
+
+p#taskCardName {
+  padding: none;
+  margin: none;
+}
+
+#taskCardHeader {
+display: flex;
+flex-wrap: none;
+justify-content: flex-start;
+align-items: center;
+}

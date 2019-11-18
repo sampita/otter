@@ -6,6 +6,7 @@ import eventListeners from "../events/eventListeners"
 const eventCalendar = {
     buildAndAppendEventCalendar: (entry) => {
         let calendar = `
+        <h3 class="componentTitle">Events</h3>
             <form>
                 <input type="hidden" id="eventId" value="" />
 

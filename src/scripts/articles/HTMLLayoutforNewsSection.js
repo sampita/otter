@@ -5,7 +5,7 @@ import newsFormsObject from "./form.js"
 const newsHtmlLayout = {
     buildAndAppendNewsSectionHtml() {
         const newsHtml = `
-       <h3>News<h3>
+       <h3 class="componentTitle">News<h3>
        <button id = "new-article-button"> New Article </button>
        <section id = "articlesDisplayContainer"></section>  
 

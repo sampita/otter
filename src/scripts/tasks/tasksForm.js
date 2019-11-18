@@ -10,7 +10,7 @@ buildAndAppendTaskContainer: () => {
       <input type="hidden" id="taskId" value="" />
       <fieldset clas="fieldset">
       <div id="toDoListContainer" class="taskForm-popup">
-        <h2>ToDo List</h2>
+        <h3 class="componentTitle">To-Do List</h3>
         
         <label for="taskName"><b>Task Name</b></label>
         <input type="text" placeholder="Enter Task Name"
@@ -52,11 +52,14 @@ displayTasksFunction: (taskEntries) => {
   taskEntries.forEach(task => {
     // I had to refactor this and declare this function as a variable so I could call it properly down the line.
     displayTasks +=`<article class="task--${task.id}">
-    <h2>${task.name}</h2>
+    <header id="taskCardHeader">
+    <input type="checkbox">
+    <h2 id="taskCardName">${task.name}</h2>
+    <i class="fas fa-pen" id="editTask--${task.id}"></i>
+    <i class="fas fa-trash-alt" id="deleteTask--${task.id}"></i>
+    </header>
     <p>${task.date}</p>
     <p>${task.completed}</p>
-    <button id="editTask--${task.id}">Edit Task</button>
-    <button id="deleteTask--${task.id}">Delete Task</button>
     </article>
     `
     
